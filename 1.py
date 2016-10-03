@@ -63,7 +63,7 @@ def handle(msg):
 		return
 		
 		
-bot = telepot.Bot('235661200:AAHJOtVFyHwIe1X27UYVZGqBYQ6gHLjj_Wc')
+bot = telepot.Bot('YOUR ID HERE')
 bot.message_loop(handle)
 print 'listening'
 
