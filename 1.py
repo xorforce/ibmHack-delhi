@@ -43,7 +43,11 @@ def handle(msg):
 		first_word = command.split()[0]
 		second_word = command.split()[1]
 		url = 'http://api.openweathermap.org/data/2.5/forecast/Moscow?id=524901&APPID=a26524e13fd724411501e93ef445f9bc'
-		bot.sendMessage(chat_id,'Temprature in '+second_word+' is http://openweathermap.org/find?q='+second_word)
+		weatherdata=urllib2.urlopen(url)
+		response=json.load(weatherdata)
+		maxi=response['list'][0]['main']['temp_max']
+		mini=response['list'][0]['main']['temp_min']
+		bot.sendMessage(chat_id,'Maximum Temprature in '+second_word+' is'+str(maxi)+'K and minimum is '+str(mini)+'K' )		bot.sendMessage(chat_id,'Temprature in '+second_word+' is http://openweathermap.org/find?q='+second_word)
 		return 
 		
 	if acts.lower() in command.lower():
