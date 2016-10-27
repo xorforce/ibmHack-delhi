@@ -11,9 +11,9 @@ from watson_developer_cloud import NaturalLanguageClassifierV1
 #	password= ''
 #)
 
-welcomeMsg = 'Welcome to TravelBot. It sends you latest ticket prices,tempratures of the places you want to visit, the activities you can do there and the best possible suitable packages for your needs! Type /help for more info.'
+welcomeMsg = 'Welcome to TravelBot. It sends you latest ticket prices, temperatures of the places you want to visit, the activities you can do there and the best possible suitable packages for your needs! Type /help for more info.'
 
-helpMsg = '1. Type "tickets" deparure destination for tickets 2. Type "weather" destination for weather 3. Type "Activities" destination to see the activities in that area'
+helpMsg = '1. Type "tickets" <departure destination> for tickets 2. Type "weather" <destination> for weather 3. Type "Activities" <destination> to see the activities in that area'
 
 ticks = 'tickets'
 acts = 'activities'
