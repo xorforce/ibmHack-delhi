@@ -63,7 +63,7 @@ def handle(msg):
 		second_word = command.split()[1]
 		url = 'http://terminal2.expedia.com/x/packages?departureDate=2016-10-02&originAirport=SEA&destinationAirport=LHR&returnDate=2016-10-09&regionid=6000479&apikey=taOzcHFB0CATpL0MKlWSnhlw8MXnQy6j'
 		data = json.load(urllib2.urlopen(url))
-		bot.sendMessage(chat_id,'Thompson Seattle,2229LC,\n Fairmount Olympic 2524LC,\n Hotel FIVE 7802LC, Marquee Hotel 1765LC,\n The Roosevelt 1857LC')
+		bot.sendMessage(chat_id,'Thompson,2229LC,\n Fairmount Olympic 2524LC,\n Hotel FIVE 7802LC, Marquee Hotel 1765LC,\n The Roosevelt 1857LC')
 		return
 		
 		
